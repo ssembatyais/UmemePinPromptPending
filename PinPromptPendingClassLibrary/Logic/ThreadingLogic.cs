@@ -16,14 +16,8 @@ namespace UssdPaymentSender.Logic
     public class ThreadingLogic
     {
         DataBaseHandler dh = new DataBaseHandler();
-        private string PinPromptPendingQueue = @".\private$\parkingPinPromptPending";
-        private string PinPromptProcessingQueue = @".\private$\parkingPinPromptProcessing";
-        private string BinItPinPromptPendingQueue = @".\private$\QBPinPromptPending";
-        private string BinItPinPromptProcessingQueue = @".\private$\QBPinPromptProcessing";
-        private string caaPinPromptPendingQueue = @".\private$\CAAPinPromptPendingQueue";
-        private string caaPinPromptProcessingQueue = @".\private$\CAApinpromptprocessingqueue";
-        private string GenericPendingQueue = @".\private$\GenericPendingQueue";
-        private DataTable returnTable;
+        private string PinPromptPendingQueue = @".\private$\dunpinpromptpendingqueue";
+        private string PinPromptProcessingQueue = @".\private$\dunpinpromptprocessingqueue";
         public double CONLOG_CHARGE, KRECS_CHARGE, PACMECS_CHARGE, KIL_CHARGE;
         private DataTable dataTable;
         private System.Messaging.Message msg;

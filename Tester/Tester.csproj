@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PinPromptPendingClassLibrary\PinPromptPendingClassLibrary.csproj">
+      <Project>{9623E5D9-6D56-4D41-8CEC-01EE441095BC}</Project>
+      <Name>PinPromptPendingClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
